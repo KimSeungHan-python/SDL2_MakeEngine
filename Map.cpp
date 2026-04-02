@@ -1,21 +1,21 @@
-#include <fstream>
-#include <iostream>
 #include "Map.h"
-#include "Actor.h"
-#include "Monster.h"
-#include "Wall.h"
-#include "Goal.h"
-#include "Floor.h"
-#include "Player.h"
 #include "Engine.h"
 
+#include <fstream>
+#include <algorithm>
 
-UMap::UMap()
+#include "Actor.h"
+#include "Player.h"
+#include "Monster.h"
+#include "Goal.h"
+#include "Wall.h"
+#include "Floor.h"
+
+UWorld::UWorld()
 {
-
 }
 
-UMap::~UMap()
+UWorld::~UWorld()
 {
 	for (auto Actor : Actors)
 	{
@@ -25,79 +25,72 @@ UMap::~UMap()
 	Actors.clear();
 }
 
-void UMap::Tick()
+void UWorld::Load(std::string MapName)
 {
-	for (auto actor : Actors)
-	{
-		actor->Tick();
-	}
-}
-void UMap::Render()
-{
-	GEngine->Clear();
+	std::ifstream MapStream(MapName);
 
-	for (auto actor : Actors)
+	int Y = 0;
+	int MaxX = -1;
+	int MaxY = -1;
+	while (!MapStream.eof())
 	{
-		actor->Render();
-	}
-	
-	GEngine->Flip();
-}
-
-void UMap::Load(string s)
-{
-	int YlineCount = 0;
-	std::ifstream file(s);
-	std::string line;
-	if (file.is_open()) {
-		// 더 이상 읽을 줄이 없을 때까지 반복
-		while (std::getline(file, line))
+		std::string Line;
+		std::getline(MapStream, Line);
+		for (int X = 0; X < Line.length(); ++X)
 		{
-			YlineCount++;
-			for (int i = 0; i < line.size(); i++)//맵은 잘 불러짐
+			if (Line[X] == '#')
 			{
-				if (line[i] == 'P')
-				{
-					SpawnActors<AFloor>()->SetActorLocation(i, YlineCount);
-					SpawnActors<APlayer>()->SetActorLocation(i, YlineCount);
-				}
-				else if (line[i] == 'M')
-				{
-					SpawnActors<AFloor>()->SetActorLocation(i, YlineCount);
-					SpawnActors<AMonster>()->SetActorLocation(i, YlineCount);
-
-				}
-				else if (line[i] == 'G')
-				{
-					SpawnActors<AFloor>()->SetActorLocation(i, YlineCount);
-					SpawnActors<AGoal>()->SetActorLocation(i, YlineCount);
-
-				}
-				else if (line[i] == '#')
-				{
-					SpawnActors<AFloor>()->SetActorLocation(i, YlineCount);
-					SpawnActors<AWall>()->SetActorLocation(i, YlineCount);
-
-				}
-				else
-				{
-					SpawnActors<AFloor>()->SetActorLocation(i, YlineCount);
-				}
+				SpawnActor<AWall>()->SetActorLocation(X, Y);
+				SpawnActor<AFloor>()->SetActorLocation(X, Y);
 			}
-		
+			else if (Line[X] == ' ')
+			{
+				SpawnActor<AFloor>()->SetActorLocation(X, Y);
+			}
+			else if (Line[X] == 'P')
+			{
+				SpawnActor<APlayer>()->SetActorLocation(X, Y);
+				SpawnActor<AFloor>()->SetActorLocation(X, Y);
+			}
+			else if (Line[X] == 'M')
+			{
+				SpawnActor<AMonster>()->SetActorLocation(X, Y);
+				SpawnActor<AFloor>()->SetActorLocation(X, Y);
+			}
+			else if (Line[X] == 'G')
+			{
+				SpawnActor<AGoal>()->SetActorLocation(X, Y);
+				SpawnActor<AFloor>()->SetActorLocation(X, Y);
+			}
+
+			if (MaxX < X + 1)
+			{
+				MaxX = X + 1;
+			}
+
 		}
-		file.close();
+		Y++;
 	}
-	Sort();
+
+	MaxY = Y;
+
+	SDL_SetWindowSize(GEngine->GetWindow(), (MaxX) * 30, MaxY * 30);
+
+	//Sort();
+	std::sort(Actors.begin(), Actors.end(),
+		[](AActor* First, AActor* Second) -> int {
+			return (First->GetZOrder() < Second->GetZOrder() ? 1 : 0);
+		}
+	);
 }
 
-void UMap::Sort()
+void UWorld::Sort()
 {
-	for (int FirstIndex = 0; FirstIndex < Actors.size(); FirstIndex++)
+	for (int FirstIndex = 0; FirstIndex < Actors.size(); ++FirstIndex)
 	{
-		for (int SecondIndex = 0; SecondIndex < Actors.size(); SecondIndex++)
+		for (int SecondIndex = 0; SecondIndex < Actors.size(); ++SecondIndex)
 		{
-			if (Actors[FirstIndex]->ZOrder < Actors[SecondIndex]->ZOrder)
+			if (Actors[FirstIndex]->GetZOrder() < Actors[SecondIndex]->GetZOrder())
 			{
 				auto Temp = Actors[FirstIndex];
 				Actors[FirstIndex] = Actors[SecondIndex];
@@ -107,4 +100,22 @@ void UMap::Sort()
 	}
 }
 
+void UWorld::Tick()
+{
+	for (auto Actor : Actors)
+	{
+		Actor->Tick();
+	}
+}
 
+void UWorld::Render()
+{
+	GEngine->Clear();
+
+	for (auto Actor : Actors)
+	{
+		Actor->Render();
+	}
+
+	GEngine->Flip();
+}

@@ -1,44 +1,42 @@
 #pragma once
 #include <vector>
 #include <string>
-using namespace std;
+
 class AActor;
-class AMonster;
-class AFloor;
-class APlayer;
-class AGoal;
-class AWall;
 
-
-class UMap
+class UWorld
 {
 public:
-	UMap();
-	virtual ~UMap();
+	UWorld();
+	virtual ~UWorld();
 
-
-	void Tick();
-	void Render();
-
-	void Load(string s);
-
-	template <typename T>
-	AActor* SpawnActors()
+	template<typename T>
+	AActor* SpawnActor()
 	{
 		AActor* NewActor = new T;
-
 		Actors.push_back(NewActor);
+
 		return NewActor;
 	}
+
+	void Load(std::string MapName);
+
+
+
 
 	inline std::vector<class AActor*>& GetActors()
 	{
 		return Actors;
 	}
 
-	void Sort();
+	void Tick();
+
+	void Render();
 
 protected:
-	vector<class AActor*> Actors;
-};
 
+	std::vector<class AActor*> Actors;
+
+	void Sort();
+
+};

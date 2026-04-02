@@ -3,11 +3,6 @@
 class AWall : public AActor
 {
 public:
-	AWall();
-	~AWall();
-
-	void BeginPlay() override;
-	void Tick() override;
-	void Render() override;
+	AWall(int InX = 0, int InY = 0, char InMesh = '*');
+	virtual ~AWall();
 };
-

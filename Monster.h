@@ -3,11 +3,12 @@
 class AMonster : public AActor
 {
 public:
-	AMonster();
-	~AMonster();
+	AMonster(int InX = 0, int InY = 0, char InMesh = 'M');
+	virtual ~AMonster();
 
-	void BeginPlay() override;
-	void Tick() override;
-	void Render() override;
+	virtual void Tick() override;
+
+protected:
+	float ElapsedTime = 0;
+	float ExecutionTime = 0.1f;
 };
-

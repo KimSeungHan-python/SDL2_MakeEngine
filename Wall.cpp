@@ -1,33 +1,23 @@
 #include "Wall.h"
+#include "Engine.h"
+#include "ResourceManager.h"
 
-AWall::AWall()
+AWall::AWall(int InX, int InY, char InMesh)
 {
-	X = 0;
-	Y = 0;
-	Mesh = '#';
+	X = InX;
+	Y = InY;
+	Mesh = InMesh;
 	ZOrder = 1;
-	R = 255;
+
+	R = 0;
 	G = 255;
 	B = 0;
+
+	Resource TempResource = GEngine->GetResourceManager()->LoadTexture("Data/wall.bmp");
+	Image = TempResource.Image;
+	Texture = TempResource.Texture;
 }
 
 AWall::~AWall()
 {
-
-}
-
-
-
-void AWall::BeginPlay()
-{
-}
-
-void AWall::Tick()
-{
-
-}
-
-void AWall::Render()
-{
-	__super::Render();
 }

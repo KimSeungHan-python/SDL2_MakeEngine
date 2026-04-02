@@ -1,51 +1,36 @@
 #include "Actor.h"
-#include <Windows.h>
-#include <iostream>
 #include "Engine.h"
+#include <iostream>
+#include <Windows.h>
 
-AActor::AActor()
+AActor::AActor(int InX, int InY, char InMesh) : X(InX), Y(InY), Mesh(InMesh)
 {
-	X = 0;
-	Y = 0;
-	Mesh = ' ';
-}
-
-AActor::AActor(int InX = 0, int InY = 0, char InMesh = ' ')
-{
-	X = InX;
-	Y = InY;
-	Mesh = InMesh;
 	R = 0;
-	B = 0;
 	G = 0;
+	B = 0;
 }
 
 AActor::~AActor()
 {
-
 }
 
 void AActor::BeginPlay()
 {
-
 }
 
 void AActor::Tick()
 {
-
 }
+
 void AActor::Render()
 {
-	//COORD pos = { X,Y }; //x, y 좌표 설정
-	//SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos); //커서 설정
-	//
-	//std::cout << Mesh;
-
-	GEngine->Draw(X, Y, Mesh);
-	GEngine->Draw(X,Y,R,G,B);
+	int TileSize = 30;
+	SDL_Rect DestinationRect = { X * TileSize, Y * TileSize, TileSize, TileSize };
+	SDL_RenderCopy(GEngine->GetRenderer(), Texture, nullptr, &DestinationRect);
 }
-void AActor::SetActorLocation(int InX, int InY)
+
+void AActor::SetActorLocation(int NewX, int NewY)
 {
-	X = InX;
-	Y = InY;
+	X = NewX;
+	Y = NewY;
 }

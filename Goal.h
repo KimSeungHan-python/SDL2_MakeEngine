@@ -3,11 +3,6 @@
 class AGoal : public AActor
 {
 public:
-	AGoal();
-	~AGoal();
-
-	void BeginPlay() override;
-	void Tick() override;
-	void Render() override;
+	AGoal(int InX = 0, int InY = 0, char InMesh = 'G');
+	virtual ~AGoal();
 };
-
