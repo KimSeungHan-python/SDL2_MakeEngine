@@ -1,9 +1,15 @@
 #pragma once
 #include <string>
-//#include "SDL.h"
+#include <vector>	
+#include <functional>
+
+using FActorBeginOverlapSignature = std::function<void(class AActor* OtherActor)>;
 
 struct SDL_Surface;
 struct SDL_Texture;
+
+class UComponent;
+
 
 class AActor
 {
@@ -13,29 +19,49 @@ public:
 
 	virtual void BeginPlay();
 
-	//override
 	virtual void Tick();
-
-	virtual void Render();
 
 	void SetActorLocation(int NewX, int NewY);
 
-	inline const int GetZOrder()
+	std::vector<UComponent*> Components;
+
+	inline int GetX() const
 	{
-		return ZOrder;
+		return X;
 	}
 
+	inline int GetY() const
+	{
+		return Y;
+	}
+
+	FActorBeginOverlapSignature OnActorBeginOverlap;
+
+	virtual void ReceiveHit(AActor* other);
+
+
 protected:
+
 	int X;
 	int Y;
 
-	int R;
-	int G;
-	int B;
+	template<typename T>
+	T* CreateDefaultSubobject(std::string ComponentName)
+	{
+		T* Temp = new T;
+		Temp->Owner = this;
+		Components.push_back(Temp);
 
-	int ZOrder = 0;
-	char Mesh;
+		return Temp;
+	}
 
-	SDL_Surface* Image;
-	SDL_Texture* Texture;
+	//int R;
+	//int G;
+	//int B;
+
+	//int ZOrder = 0;
+	//char Mesh;
+
+	//SDL_Surface* Image;
+	//SDL_Texture* Texture;
 };

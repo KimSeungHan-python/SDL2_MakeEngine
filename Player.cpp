@@ -2,21 +2,31 @@
 #include "Engine.h"
 #include "GameplayStatics.h"
 #include "ResourceManager.h"
+#include "USpriteAnimationComponent.h"
+#include "Actor.h"
+#include "CollisionComponent.h"
+#include "Map.h"
 
 APlayer::APlayer(int InX, int InY, char InMesh)
 {
 	X = InX;
 	Y = InY;
-	Mesh = InMesh;
-	ZOrder = 100;
 
-	R = 255;
-	G = 0;
-	B = 0;
+	//Resource TempResource = GEngine->GetResourceManager()->LoadTexture("Data/player.bmp", true, 255, 0, 255);
+	//Image = TempResource.Image;
+	//Texture = TempResource.Texture;
+
+	SpriteAnimationComponent = CreateDefaultSubobject<USpriteAnimationComponent>("Sprite");
 
 	Resource TempResource = GEngine->GetResourceManager()->LoadTexture("Data/player.bmp", true, 255, 0, 255);
-	Image = TempResource.Image;
-	Texture = TempResource.Texture;
+	SpriteAnimationComponent->Image = TempResource.Image;
+	SpriteAnimationComponent->Texture = TempResource.Texture;
+	SpriteAnimationComponent->ZOrder = 100;
+	SpriteAnimationComponent->ExecutionTime = 0.15f;
+
+	CollisionComponent = CreateDefaultSubobject<UCollisionComponent>("Collision");
+	CollisionComponent->bIsGenerateHit = true;
+	CollisionComponent->bIsGenerateOverlap = true;
 }
 
 APlayer::~APlayer()
@@ -24,8 +34,14 @@ APlayer::~APlayer()
 }
 
 void APlayer::BeginPlay()
-{ 
+{
 	__super::BeginPlay();
+
+	//OnActorBeginOverlap = [&](AActor* Other) -> void {
+
+	//};
+
+	//OnActorBeginOverlap = ProcessBeginOverlap(nullptr);
 
 }
 
@@ -39,53 +55,45 @@ void APlayer::Tick()
 	{
 		SDL_Keycode KeyCode = Event.key.keysym.sym;
 
-		if (KeyCode == SDLK_w)
+		if (KeyCode == SDLK_w && PredictMove(X,Y-1))
 		{
 			Y--;
-			SpriteIndexY = 2;
-			SpriteIndexX = 0;
+			SpriteAnimationComponent->SpriteIndexY = 2;
+			SpriteAnimationComponent->SpriteIndexX = 0;
 		}
-		if (KeyCode == SDLK_s)
+		if (KeyCode == SDLK_s && PredictMove(X, Y + 1))
 		{
 			Y++;
-			SpriteIndexY = 3;
-			SpriteIndexX = 0;
+			SpriteAnimationComponent->SpriteIndexY = 3;
+			SpriteAnimationComponent->SpriteIndexX = 0;
 		}
-		if (KeyCode == SDLK_a)
+		if (KeyCode == SDLK_a && PredictMove(X-1, Y))
 		{
 			X--;
-			SpriteIndexY = 0;
-			SpriteIndexX = 0;
+			SpriteAnimationComponent->SpriteIndexY = 0;
+			SpriteAnimationComponent->SpriteIndexX = 0;
 		}
-		if (KeyCode == SDLK_d)
+		if (KeyCode == SDLK_d && PredictMove(X+1, Y))
 		{
 			X++;
-			SpriteIndexY = 1;
-			SpriteIndexX = 0;
+			SpriteAnimationComponent->SpriteIndexY = 1;
+			SpriteAnimationComponent->SpriteIndexX = 0;
 		}
 		if (KeyCode == SDLK_ESCAPE)
 		{
 			GEngine->Stop();
 		}
 	}
-
-	ElapsedTime += UGamePlayStatics::GetWorldDeltaSeconds();
-	if (ElapsedTime >= ExecutionTime)
-	{
-		SpriteIndexX++;
-		SpriteIndexX = SpriteIndexX % 5;
-		ElapsedTime = 0;
-	}
 }
 
-void APlayer::Render()
+void APlayer::ReceiveHit(AActor* other)
 {
-	int TileSize = 30;
-	int SpriteSizeX = Image->w / 5;
-	int SpriteSizeY = Image->h / 5;
 
-	//Texture 위치 설정
-	SDL_Rect SourceRect = { SpriteIndexX * SpriteSizeX, SpriteIndexY * SpriteSizeY, SpriteSizeX, SpriteSizeY };
-	SDL_Rect DestinationRect = { X * TileSize, Y * TileSize, TileSize, TileSize };
-	SDL_RenderCopy(GEngine->GetRenderer(), Texture, &SourceRect, &DestinationRect);
 }
+
+void APlayer::ProcessBeginOverlap(AActor* OtherActor)
+{
+
+}
+
+

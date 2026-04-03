@@ -1,21 +1,21 @@
 #include "Goal.h"
 #include "Engine.h"
 #include "ResourceManager.h"
+#include "SpriteComponent.h"
 
 AGoal::AGoal(int InX, int InY, char InMesh)
 {
 	X = InX;
 	Y = InY;
-	Mesh = InMesh;
-	ZOrder = 30;
 
-	R = 0;
-	G = 0;
-	B = 255;
+	SpriteComponent = CreateDefaultSubobject<USpriteComponent>("Sprite");
 
-	Resource TempResource = GEngine->GetResourceManager()->LoadTexture("Data/goal.bmp", true, 255, 255, 255);
-	Image = TempResource.Image;
-	Texture = TempResource.Texture;
+	Resource TempResource = GEngine->GetResourceManager()->LoadTexture("Data/goal.bmp", true, 255
+		, 255, 255);
+	SpriteComponent->Image = TempResource.Image;
+	SpriteComponent->Texture = TempResource.Texture;
+
+	SpriteComponent->ZOrder = 4;
 }
 
 AGoal::~AGoal()
