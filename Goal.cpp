@@ -2,6 +2,7 @@
 #include "Engine.h"
 #include "ResourceManager.h"
 #include "SpriteComponent.h"
+#include "CollisionComponent.h"
 
 AGoal::AGoal(int InX, int InY, char InMesh)
 {
@@ -14,8 +15,13 @@ AGoal::AGoal(int InX, int InY, char InMesh)
 		, 255, 255);
 	SpriteComponent->Image = TempResource.Image;
 	SpriteComponent->Texture = TempResource.Texture;
-
 	SpriteComponent->ZOrder = 4;
+
+	CollisionComponent = CreateDefaultSubobject<UCollisionComponent>("Collision");
+	CollisionComponent->bIsGenerateHit = false;
+	CollisionComponent->bIsGenerateOverlap = true;
+
+	//Name = "Goal";
 }
 
 AGoal::~AGoal()

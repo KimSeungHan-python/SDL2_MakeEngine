@@ -3,6 +3,7 @@
 #include "Map.h"
 #include "SDL.h"
 #include "ResourceManager.h"
+#include "SDL_ttf.h"
 
 UEngine* UEngine::Instance = nullptr;
 
@@ -25,6 +26,11 @@ void UEngine::Init()
 	MyRenderer = SDL_CreateRenderer(MyWindow, -1, SDL_RENDERER_PRESENTVSYNC | SDL_RENDERER_ACCELERATED | SDL_RENDERER_TARGETTEXTURE);
 	//MyRender = SDL_CreateRenderer(MyWindow, -1, SDL_RENDERER_PRESENTVSYNC | SDL_RENDERER_SOFTWARE);
 
+	TTF_Init();
+	
+	Font = TTF_OpenFont("./Data/font.otf", 32.0f);
+
+
 	ResourceManager = new UResourceManager();
 
 	bIsRunning = true;
@@ -36,6 +42,13 @@ void UEngine::Init()
 
 void UEngine::Term()
 {
+	//ResourceManager로 옮기는게 좋긴함
+	if (Font)
+	{
+		TTF_CloseFont(Font);
+	}
+
+	TTF_Quit();
 	SDL_DestroyRenderer(MyRenderer);
 	SDL_DestroyWindow(MyWindow);
 	SDL_Quit();
@@ -50,6 +63,8 @@ void UEngine::Term()
 
 void UEngine::Run()
 {
+	World->BeginPlay();
+
 	Uint64 LastTime;
 	while (bIsRunning)
 	{

@@ -3,40 +3,103 @@
   "WorkspaceRootPath": "C:\\Work\\P_2026_03_25\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\Actor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:Actor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\Engine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:Engine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\USpriteAnimationComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:USpriteAnimationComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\SpriteComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:SpriteComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\GamePlayStatics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:GamePlayStatics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\MyGM.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:MyGM.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\functional||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\Actor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:Actor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\Actor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:Actor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\CollisionComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:CollisionComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\GameMode.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:GameMode.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\YouDieActor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:YouDieActor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\Component.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:Component.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\MyGM.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:MyGM.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\Monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:Monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\Goal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:Goal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\GamePlayStatics.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:GamePlayStatics.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\Engine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:Engine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\BGActor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:BGActor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\TextRenderActor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:TextRenderActor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\AudioComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:AudioComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\String.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:String.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\TextRenderComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:TextRenderComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,124 +109,320 @@
       "DocumentGroups": [
         {
           "DockedWidth": 254,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "functional",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\functional",
+              "RelativeDocumentMoniker": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\functional",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\functional",
+              "RelativeToolTip": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\functional",
+              "ViewState": "AgIAAIkDAAAAAAAAAAAiwJoDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-09T00:04:17.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Actor.h",
               "DocumentMoniker": "C:\\Work\\P_2026_03_25\\Actor.h",
               "RelativeDocumentMoniker": "Actor.h",
               "ToolTip": "C:\\Work\\P_2026_03_25\\Actor.h",
               "RelativeToolTip": "Actor.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAADgvyUAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-03T08:21:31.879Z",
+              "WhenOpened": "2026-04-09T00:01:05.353Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Map.h",
-              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\Map.h",
-              "RelativeDocumentMoniker": "Map.h",
-              "ToolTip": "C:\\Work\\P_2026_03_25\\Map.h",
-              "RelativeToolTip": "Map.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-03T08:21:19.275Z",
+              "DocumentIndex": 0,
+              "Title": "GamePlayStatics.cpp",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\GamePlayStatics.cpp",
+              "RelativeDocumentMoniker": "GamePlayStatics.cpp",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\GamePlayStatics.cpp",
+              "RelativeToolTip": "GamePlayStatics.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAArwBAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-08T23:57:29.091Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Engine.h",
-              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\Engine.h",
-              "RelativeDocumentMoniker": "Engine.h",
-              "ToolTip": "C:\\Work\\P_2026_03_25\\Engine.h",
-              "RelativeToolTip": "Engine.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-03T08:21:03.734Z",
+              "Title": "MyGM.cpp",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\MyGM.cpp",
+              "RelativeDocumentMoniker": "MyGM.cpp",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\MyGM.cpp",
+              "RelativeToolTip": "MyGM.cpp",
+              "ViewState": "AgIAAA0AAAAAAAAAAAArwCUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-08T23:57:13.81Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\Player.cpp",
+              "RelativeDocumentMoniker": "Player.cpp",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\Player.cpp",
+              "RelativeToolTip": "Player.cpp",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAcwC4AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-08T04:16:23.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "YouDieActor.cpp",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\YouDieActor.cpp",
+              "RelativeDocumentMoniker": "YouDieActor.cpp",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\YouDieActor.cpp",
+              "RelativeToolTip": "YouDieActor.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-08T01:56:02.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Monster.cpp",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\Monster.cpp",
+              "RelativeDocumentMoniker": "Monster.cpp",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\Monster.cpp",
+              "RelativeToolTip": "Monster.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-08T05:01:21.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Actor.cpp",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\Actor.cpp",
+              "RelativeDocumentMoniker": "Actor.cpp",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\Actor.cpp",
+              "RelativeToolTip": "Actor.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-08T23:51:07.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Engine.cpp",
               "DocumentMoniker": "C:\\Work\\P_2026_03_25\\Engine.cpp",
               "RelativeDocumentMoniker": "Engine.cpp",
               "ToolTip": "C:\\Work\\P_2026_03_25\\Engine.cpp",
               "RelativeToolTip": "Engine.cpp",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAvwKgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-04-03T08:19:52.983Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "USpriteAnimationComponent.cpp",
-              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\USpriteAnimationComponent.cpp",
-              "RelativeDocumentMoniker": "USpriteAnimationComponent.cpp",
-              "ToolTip": "C:\\Work\\P_2026_03_25\\USpriteAnimationComponent.cpp",
-              "RelativeToolTip": "USpriteAnimationComponent.cpp",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACcAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-03T08:03:16.711Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Player.cpp",
-              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\Player.cpp",
-              "RelativeDocumentMoniker": "Player.cpp",
-              "ToolTip": "C:\\Work\\P_2026_03_25\\Player.cpp",
-              "RelativeToolTip": "Player.cpp",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFMAAAATAAAAAAAAAA==",
+              "Title": "Map.cpp",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\Map.cpp",
+              "RelativeDocumentMoniker": "Map.cpp",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\Map.cpp",
+              "RelativeToolTip": "Map.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAKMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-03T07:59:44.425Z",
+              "WhenOpened": "2026-04-08T04:05:36.902Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Character.cpp",
-              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\Character.cpp",
-              "RelativeDocumentMoniker": "Character.cpp",
-              "ToolTip": "C:\\Work\\P_2026_03_25\\Character.cpp",
-              "RelativeToolTip": "Character.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "GameMode.cpp",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\GameMode.cpp",
+              "RelativeDocumentMoniker": "GameMode.cpp",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\GameMode.cpp",
+              "RelativeToolTip": "GameMode.cpp",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-03T07:59:02.16Z",
+              "WhenOpened": "2026-04-08T04:29:17.75Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "CollisionComponent.cpp",
-              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\CollisionComponent.cpp",
-              "RelativeDocumentMoniker": "CollisionComponent.cpp",
-              "ToolTip": "C:\\Work\\P_2026_03_25\\CollisionComponent.cpp",
-              "RelativeToolTip": "CollisionComponent.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Character.cpp",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\Character.cpp",
+              "RelativeDocumentMoniker": "Character.cpp",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\Character.cpp",
+              "RelativeToolTip": "Character.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACYAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-03T07:58:58.346Z",
+              "WhenOpened": "2026-04-08T04:52:36.341Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SpriteComponent.cpp",
-              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\SpriteComponent.cpp",
-              "RelativeDocumentMoniker": "SpriteComponent.cpp",
-              "ToolTip": "C:\\Work\\P_2026_03_25\\SpriteComponent.cpp",
-              "RelativeToolTip": "SpriteComponent.cpp",
+              "DocumentIndex": 12,
+              "Title": "Component.cpp",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\Component.cpp",
+              "RelativeDocumentMoniker": "Component.cpp",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\Component.cpp",
+              "RelativeToolTip": "Component.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-03T07:58:44.346Z",
+              "WhenOpened": "2026-04-08T23:55:38.123Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MyGM.h",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\MyGM.h",
+              "RelativeDocumentMoniker": "MyGM.h",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\MyGM.h",
+              "RelativeToolTip": "MyGM.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-08T02:31:55.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Player.h",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\Player.h",
+              "RelativeDocumentMoniker": "Player.h",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\Player.h",
+              "RelativeToolTip": "Player.h",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-08T04:16:20.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Goal.h",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\Goal.h",
+              "RelativeDocumentMoniker": "Goal.h",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\Goal.h",
+              "RelativeToolTip": "Goal.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-08T04:20:02.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Monster.h",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\Monster.h",
+              "RelativeDocumentMoniker": "Monster.h",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\Monster.h",
+              "RelativeToolTip": "Monster.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-08T04:21:05.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BGActor.h",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\BGActor.h",
+              "RelativeDocumentMoniker": "BGActor.h",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\BGActor.h",
+              "RelativeToolTip": "BGActor.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-08T04:01:54.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TextRenderActor.h",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\TextRenderActor.h",
+              "RelativeDocumentMoniker": "TextRenderActor.h",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\TextRenderActor.h",
+              "RelativeToolTip": "TextRenderActor.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-08T01:51:22.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GamePlayStatics.h",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\GamePlayStatics.h",
+              "RelativeDocumentMoniker": "GamePlayStatics.h",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\GamePlayStatics.h",
+              "RelativeToolTip": "GamePlayStatics.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-08T02:20:30.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Engine.h",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\Engine.h",
+              "RelativeDocumentMoniker": "Engine.h",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\Engine.h",
+              "RelativeToolTip": "Engine.h",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAGEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-03T08:21:03.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "String.h",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\String.h",
+              "RelativeDocumentMoniker": "String.h",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\String.h",
+              "RelativeToolTip": "String.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-08T02:39:21.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AudioComponent.h",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\AudioComponent.h",
+              "RelativeDocumentMoniker": "AudioComponent.h",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\AudioComponent.h",
+              "RelativeToolTip": "AudioComponent.h",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-08T02:40:02.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TextRenderComponent.h",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\TextRenderComponent.h",
+              "RelativeDocumentMoniker": "TextRenderComponent.h",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\TextRenderComponent.h",
+              "RelativeToolTip": "TextRenderComponent.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-08T01:21:53.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-08T01:10:27.646Z"
             }
           ]
         }

@@ -6,6 +6,9 @@
 #include "Actor.h"
 #include "CollisionComponent.h"
 #include "Map.h"
+#include "Goal.h"
+#include "MyGM.h"
+#include "Monster.h"
 
 APlayer::APlayer(int InX, int InY, char InMesh)
 {
@@ -25,7 +28,7 @@ APlayer::APlayer(int InX, int InY, char InMesh)
 	SpriteAnimationComponent->ExecutionTime = 0.15f;
 
 	CollisionComponent = CreateDefaultSubobject<UCollisionComponent>("Collision");
-	CollisionComponent->bIsGenerateHit = true;
+	CollisionComponent->bIsGenerateHit = false;
 	CollisionComponent->bIsGenerateOverlap = true;
 }
 
@@ -37,11 +40,27 @@ void APlayer::BeginPlay()
 {
 	__super::BeginPlay();
 
-	//OnActorBeginOverlap = [&](AActor* Other) -> void {
+	OnActorBeginOverlap = [&](AActor* Other) -> void {
+		AGoal* Goal = dynamic_cast<AGoal*>(Other);
+		if (Goal)
+		{
+			AMyGM* GM = dynamic_cast<AMyGM*>(UGamePlayStatics::GetGameMode());
+			if (GM)
+			{
+				GM->GameComplete();
+			}
+		}
 
-	//};
-
-	//OnActorBeginOverlap = ProcessBeginOverlap(nullptr);
+		AMonster* Monster = dynamic_cast<AMonster*>(Other);
+		if (Monster)
+		{
+			AMyGM* GM = dynamic_cast<AMyGM*>(UGamePlayStatics::GetGameMode());
+			if (GM)
+			{
+				GM->GameOver();
+			}
+		}
+		};
 
 }
 

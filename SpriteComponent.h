@@ -3,7 +3,7 @@
 #include "IRenderableComponent.h"
 #include "SDL.h"
 
-class USpriteComponent : public UComponent,public IRenderableComponent
+class USpriteComponent : public UComponent, public IRenderableComponent
 {
 public:
 	USpriteComponent();
@@ -18,7 +18,7 @@ public:
 	//UE ¿÷¿Ω
 	virtual void Render() override;
 
-	int ZOrder = 0;
+	//int ZOrder = 0;
 
 	SDL_Surface* Image;
 	SDL_Texture* Texture;

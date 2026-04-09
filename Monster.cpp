@@ -21,7 +21,7 @@ AMonster::AMonster(int InX, int InY, char InMesh)
 	ExecutionTime = 0.5f;
 
 	CollisionComponent = CreateDefaultSubobject<UCollisionComponent>("Collision");
-	CollisionComponent->bIsGenerateHit = true;
+	CollisionComponent->bIsGenerateHit = false;
 	CollisionComponent->bIsGenerateOverlap = true;
 }
 

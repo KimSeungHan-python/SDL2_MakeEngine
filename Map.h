@@ -1,6 +1,7 @@
 #pragma once
 #include <vector>
 #include <string>
+#include "GameMode.h"
 
 class AActor;
 
@@ -9,6 +10,8 @@ class UWorld
 public:
 	UWorld();
 	virtual ~UWorld();
+
+	void SetGameMode(AGameMode* NewGameMode);
 
 	template<typename T>
 	AActor* SpawnActor()
@@ -43,6 +46,7 @@ public:
 	{
 		return Actors;
 	}
+	void BeginPlay();
 
 	void Tick();
 

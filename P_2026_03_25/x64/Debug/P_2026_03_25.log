@@ -1,6 +1,26 @@
-﻿  GameMode.cpp
+﻿  Actor.cpp
+  BGActor.cpp
+  Character.cpp
+  Engine.cpp
+C:\Work\P_2026_03_25\Engine.cpp(31,41): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Floor.cpp
+  GameMode.cpp
+  GamePlayStatics.cpp
+  Goal.cpp
+  Map.cpp
+  Monster.cpp
+  MyGM.cpp
   Player.cpp
+  SpriteComponent.cpp
+  TextRenderActor.cpp
+  TextRenderComponent.cpp
   USpriteAnimationComponent.cpp
+  Wall.cpp
+  YouDieActor.cpp
+  main.cpp
+C:\Work\P_2026_03_25\main.cpp(37,13): warning C4554: '<<': check operator precedence for possible error; use parentheses to clarify precedence
   Generating Code...
   P_2026_03_25.vcxproj -> C:\Work\P_2026_03_25\x64\Debug\P_2026_03_25.exe
+          1개 파일이 복사되었습니다.
+          1개 파일이 복사되었습니다.
           1개 파일이 복사되었습니다.

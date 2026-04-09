@@ -8,8 +8,10 @@
 #include "Map.h"
 #include <string>
 
+
 #pragma comment(lib,"SDL2")
 #pragma comment(lib,"SDL2main")
+
 
 //typedef unsigned char byte;
 using byte = unsigned char;

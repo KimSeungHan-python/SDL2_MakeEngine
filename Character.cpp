@@ -28,17 +28,17 @@ bool ACharacter::PredictMove(int InX, int InY)
 			if (OtherCollision)
 			{
 
-				if (OtherCollision->bIsGenerateHit && InX == Other->GetX() && InY == Other->GetY())
-				{
-					ReceiveHit(Other);
-					return false;
-				}
-
-				//if (OtherCollision->bIsGenerateOverlap && InX == Other->GetX() && InY == Other->GetY())
+				//if (OtherCollision->bIsGenerateHit && InX == Other->GetX() && InY == Other->GetY())
 				//{
-				//	OnActorBeginOverlap(Other);
+				//	ReceiveHit(Other);
 				//	return false;
 				//}
+
+				if (OtherCollision->bIsGenerateOverlap && InX == Other->GetX() && InY == Other->GetY())
+				{
+					OnActorBeginOverlap(Other);
+					return true;
+				}
 			}
 		}
 	}

@@ -13,6 +13,9 @@
 #include "IRenderableComponent.h"
 #include "SpriteComponent.h"
 #include "GameMode.h"
+#include "YouDieActor.h"
+#include "BGActor.h"
+#include "MyGM.h"
 
 UWorld::UWorld()
 {
@@ -29,9 +32,14 @@ UWorld::~UWorld()
 	Actors.clear();
 }
 
+void UWorld::SetGameMode(AGameMode* NewGameMode)
+{
+	Actors.push_back(NewGameMode);
+}
+
 void UWorld::Load(std::string MapName)
 {
-	Actors.push_back(new AGameMode);
+	SetGameMode(new AMyGM);
 	std::ifstream MapStream(MapName);
 
 	int Y = 0;
@@ -81,15 +89,19 @@ void UWorld::Load(std::string MapName)
 
 	SDL_SetWindowSize(GEngine->GetWindow(), (MaxX) * 30, MaxY * 30);
 
+	//map에 추가해야하는데 작업할게 많아서 패스한다.
+	SpawnActor<AYouDieActor>();
+	SpawnActor<ABGActor>();
+
 	Sort();
 	std::sort(Actors.begin(), Actors.end(),
 		[](AActor* First, AActor* Second) -> int {
 
 
-			USpriteComponent* FirstRenderComponent = nullptr;
+			IRenderableComponent* FirstRenderComponent = nullptr;
 			for (auto Component : First->Components)
 			{
-				FirstRenderComponent = dynamic_cast<USpriteComponent*>(Component);
+				FirstRenderComponent = dynamic_cast<IRenderableComponent*>(Component);
 				if (FirstRenderComponent)
 				{
 					break;
@@ -101,10 +113,10 @@ void UWorld::Load(std::string MapName)
 				return 0;
 			}
 
-			USpriteComponent* SecondRenderComponent = nullptr;
+			IRenderableComponent* SecondRenderComponent = nullptr;
 			for (auto Component : Second->Components)
 			{
-				SecondRenderComponent = dynamic_cast<USpriteComponent*>(Component);
+				SecondRenderComponent = dynamic_cast<IRenderableComponent*>(Component);
 				if (SecondRenderComponent)
 				{
 					break;
@@ -137,11 +149,19 @@ void UWorld::Sort()
 	//}
 }
 
+void UWorld::BeginPlay()
+{
+	for (auto Actor : Actors)
+	{
+		Actor->BeginPlay();
+	}
+}
+
 void UWorld::Tick()
 {
 	for (auto Actor : Actors)
 	{
-		Actor->Tick();
+		Actor->Tick();//Tick 이벤트 
 	}
 }
 
@@ -158,8 +178,8 @@ void UWorld::Render()
 		{
 			//SpriteComponent.h 차이
 			//가진 컴포넌트중에 SpriteRenderComponent가 있냐 물어보는거임
-			USpriteComponent* RenderComponent = dynamic_cast<USpriteComponent*>(Component);
-			if (RenderComponent)
+			IRenderableComponent* RenderComponent = dynamic_cast<IRenderableComponent*>(Component);
+			if (RenderComponent && RenderComponent->bIsVisible)
 			{
 				RenderComponent->Render();
 			}
